@@ -64,8 +64,11 @@ class ViewController: UIViewController {
             let password = passwordTextField.text,
             let passwordSure = passwordSureTextField.text
         {
+            ///进行判断
             let (isVerify, message) = UserVerifyService.verifyInput(phone: phone, code: sms, password: password, passwordSure: passwordSure)
+            ///判断结果,如果failed
             if !isVerify {
+                ///message: 失败原因
                 if let message = message {
                     EWToast.showCenterWithText(text: message, duration: 1)
                 }

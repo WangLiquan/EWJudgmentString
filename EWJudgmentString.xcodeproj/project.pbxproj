@@ -14,8 +14,8 @@
 		7925DEE1215A01BF008B8F02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7925DEDF215A01BF008B8F02 /* LaunchScreen.storyboard */; };
 		7925DEEC215A01BF008B8F02 /* EWJudgmentStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925DEEB215A01BF008B8F02 /* EWJudgmentStringTests.swift */; };
 		7925DEF7215A01BF008B8F02 /* EWJudgmentStringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925DEF6215A01BF008B8F02 /* EWJudgmentStringUITests.swift */; };
-		7925DF06215A0222008B8F02 /* UserVerifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925DF05215A0222008B8F02 /* UserVerifyService.swift */; };
 		7925DF0E215A076F008B8F02 /* EWToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925DF0D215A076F008B8F02 /* EWToast.swift */; };
+		7925DF10215A10A6008B8F02 /* EWUserVerifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7925DF0F215A10A6008B8F02 /* EWUserVerifyService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		7925DEF2215A01BF008B8F02 /* EWJudgmentStringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EWJudgmentStringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7925DEF6215A01BF008B8F02 /* EWJudgmentStringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWJudgmentStringUITests.swift; sourceTree = "<group>"; };
 		7925DEF8215A01BF008B8F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7925DF05215A0222008B8F02 /* UserVerifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserVerifyService.swift; sourceTree = "<group>"; };
 		7925DF0D215A076F008B8F02 /* EWToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWToast.swift; sourceTree = "<group>"; };
+		7925DF0F215A10A6008B8F02 /* EWUserVerifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWUserVerifyService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				7925DF0D215A076F008B8F02 /* EWToast.swift */,
-				7925DF05215A0222008B8F02 /* UserVerifyService.swift */,
+				7925DF0F215A10A6008B8F02 /* EWUserVerifyService.swift */,
 				7925DED6215A01B6008B8F02 /* AppDelegate.swift */,
 				7925DED8215A01B6008B8F02 /* ViewController.swift */,
 				7925DEDA215A01B6008B8F02 /* Main.storyboard */,
@@ -262,10 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7925DF06215A0222008B8F02 /* UserVerifyService.swift in Sources */,
 				7925DED9215A01B6008B8F02 /* ViewController.swift in Sources */,
 				7925DED7215A01B6008B8F02 /* AppDelegate.swift in Sources */,
 				7925DF0E215A076F008B8F02 /* EWToast.swift in Sources */,
+				7925DF10215A10A6008B8F02 /* EWUserVerifyService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

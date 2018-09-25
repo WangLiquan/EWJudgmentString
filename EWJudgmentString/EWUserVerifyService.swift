@@ -1,11 +1,10 @@
 //
-//  UserVerifyService.swift
-//  iTour
+//  EWUserVerifyService.swift
+//  EWJudgmentString
 //
-//  Created by Ling.Cai on 2017/9/19.
-//  Copyright © 2017年 Croninfo. All rights reserved.
+//  Created by Ethan.Wang on 2018/9/25.
+//  Copyright © 2018年 Ethan. All rights reserved.
 //
-
 import Foundation
 
 enum VerifyResult {
@@ -136,50 +135,50 @@ class UserVerifyService {
     ///   - passwordSure: 确认密码
     /// - Returns: (状态,原因)
     class func verifyInput(nickName:String,phone:String,code:String,password:String,passwordSure:String) -> (Bool,String?) {
-            switch UserVerifyService.verifyNick(nickName) {
-                case .empty:
-                    return (false, "请输入昵称")
-                case .failed(let message):
-                    return (false, message)
-                default:
-                break
-            }
-            switch UserVerifyService.verifyPhone(phone) {
-                case .empty:
-                    return (false, "请输入手机号")
-                case .failed(let message):
-                    return (false, message)
-                default:
-                    break
-            }
-            switch UserVerifyService.verifyCode(code) {
-                case .empty:
-                    return (false,"请输入验证码")
-                case .failed(let message):
-                    return (false, message)
-                default:
-                    break
-            }
-            switch UserVerifyService.verifyPassword(password) {
-                case .empty:
-                    return (false,"请输入密码")
-                case .failed(let message):
-                    return (false, message)
-                default:
-                    break
-            }
-            switch UserVerifyService.verifyPassword(passwordSure) {
-                case .empty:
-                    return (false,"请确认密码")
-                case .failed(let message):
-                    return (false, message)
-                default:
-                    break
-            }
+        switch UserVerifyService.verifyNick(nickName) {
+        case .empty:
+            return (false, "请输入昵称")
+        case .failed(let message):
+            return (false, message)
+        default:
+            break
+        }
+        switch UserVerifyService.verifyPhone(phone) {
+        case .empty:
+            return (false, "请输入手机号")
+        case .failed(let message):
+            return (false, message)
+        default:
+            break
+        }
+        switch UserVerifyService.verifyCode(code) {
+        case .empty:
+            return (false,"请输入验证码")
+        case .failed(let message):
+            return (false, message)
+        default:
+            break
+        }
+        switch UserVerifyService.verifyPassword(password) {
+        case .empty:
+            return (false,"请输入密码")
+        case .failed(let message):
+            return (false, message)
+        default:
+            break
+        }
+        switch UserVerifyService.verifyPassword(passwordSure) {
+        case .empty:
+            return (false,"请确认密码")
+        case .failed(let message):
+            return (false, message)
+        default:
+            break
+        }
         guard password == passwordSure else {
             return (false,"两次密码不一致")
         }
-            return (true, nil)
+        return (true, nil)
     }
     /// 验证手机号,验证码,密码,确认密码
     ///
@@ -190,42 +189,42 @@ class UserVerifyService {
     ///   - passwordSure: 确认密码
     /// - Returns: (状态,原因)
     class func verifyInput(phone:String,code:String,password:String,passwordSure:String) -> (Bool,String?) {
-            switch UserVerifyService.verifyPhone(phone) {
-                case .empty:
-                    return (false, "请输入手机号")
-                case .failed(let message):
-                    return (false, message)
-                default:
-                    break
-            }
-            switch UserVerifyService.verifyCode(code) {
-                case .empty:
-                    return (false,"请输入验证码")
-                case .failed(let message):
-                    return (false, message)
-                default:
-                    break
-            }
-            switch UserVerifyService.verifyPassword(password) {
-                case .empty:
-                    return (false,"请输入密码")
-                case .failed(let message):
-                    return (false, message)
-                default:
-                    break
-            }
-            switch UserVerifyService.verifyPassword(passwordSure) {
-                case .empty:
-                    return (false,"请输入确认密码")
-                case .failed(let message):
-                    return (false, message)
-                default:
-                break
-            }
+        switch UserVerifyService.verifyPhone(phone) {
+        case .empty:
+            return (false, "请输入手机号")
+        case .failed(let message):
+            return (false, message)
+        default:
+            break
+        }
+        switch UserVerifyService.verifyCode(code) {
+        case .empty:
+            return (false,"请输入验证码")
+        case .failed(let message):
+            return (false, message)
+        default:
+            break
+        }
+        switch UserVerifyService.verifyPassword(password) {
+        case .empty:
+            return (false,"请输入密码")
+        case .failed(let message):
+            return (false, message)
+        default:
+            break
+        }
+        switch UserVerifyService.verifyPassword(passwordSure) {
+        case .empty:
+            return (false,"请输入确认密码")
+        case .failed(let message):
+            return (false, message)
+        default:
+            break
+        }
         guard password == passwordSure else {
             return (false,"两次密码不一致")
         }
-            return (true, nil)
+        return (true, nil)
     }
 }
 
@@ -237,7 +236,7 @@ enum Validate {
     ///需要拓展可以添加相应block以及相应状态,类似身份证等等
     case phoneNum(_: String)
     case email(_: String)
-    
+
     var isRight: Bool {
         ///正则表达式字符串
         var predicateStr:String!
