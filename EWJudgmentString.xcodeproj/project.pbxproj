@@ -199,13 +199,16 @@
 				TargetAttributes = {
 					7925DED2215A01B6008B8F02 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					7925DEE6215A01BF008B8F02 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 7925DED2215A01B6008B8F02;
 					};
 					7925DEF1215A01BF008B8F02 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 7925DED2215A01B6008B8F02;
 					};
 				};
@@ -447,7 +450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWJudgmentString;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -465,7 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWJudgmentString;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -485,7 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWJudgmentStringTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EWJudgmentString.app/EWJudgmentString";
 			};
@@ -506,7 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWJudgmentStringTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EWJudgmentString.app/EWJudgmentString";
 			};
@@ -526,7 +529,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWJudgmentStringUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EWJudgmentString;
 			};
@@ -546,7 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ethan.EWJudgmentStringUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = EWJudgmentString;
 			};
