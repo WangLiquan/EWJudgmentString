@@ -49,6 +49,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "字符串验证"
         drawMyView()
     }
     private func drawMyView(){
