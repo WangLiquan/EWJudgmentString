@@ -52,19 +52,18 @@ class ViewController: UIViewController {
         self.title = "字符串验证"
         drawMyView()
     }
-    private func drawMyView(){
+    private func drawMyView() {
         self.view.addSubview(phoneTextField)
         self.view.addSubview(smsTextField)
         self.view.addSubview(passwordTextField)
         self.view.addSubview(passwordSureTextField)
         self.view.addSubview(sureButton)
     }
-    @objc private func onClickSureButton(){
+    @objc private func onClickSureButton() {
         if  let phone = phoneTextField.text,
             let sms = smsTextField.text,
             let password = passwordTextField.text,
-            let passwordSure = passwordSureTextField.text
-        {
+            let passwordSure = passwordSureTextField.text {
             ///进行判断
             let (isVerify, message) = UserVerifyService.verifyInput(phone: phone, code: sms, password: password, passwordSure: passwordSure)
             ///判断结果,如果failed
@@ -79,6 +78,4 @@ class ViewController: UIViewController {
         EWToast.showCenterWithText(text: "全部填写正确", duration: 1)
     }
 
-
 }
-

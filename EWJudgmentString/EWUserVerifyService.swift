@@ -18,7 +18,7 @@ class UserVerifyService {
     ///
     /// - Parameter phone: 手机号
     class func verifyPhone(_ phone:String) -> VerifyResult {
-        guard phone.count != 0 else {
+        guard phone.isEmpty else {
             return .empty
         }
         guard Validate.phoneNum(phone).isRight else {
@@ -28,7 +28,7 @@ class UserVerifyService {
     }
     /// 验证验证码
     class func verifyCode(_ code:String) -> VerifyResult {
-        guard code.count != 0 else {
+        guard code.isEmpty else {
             return .empty
         }
         guard code.count == 6 else {
@@ -38,14 +38,14 @@ class UserVerifyService {
     }
     /// 验证昵称
     class func verifyNick(_ nick:String) -> VerifyResult {
-        if nick.count == 0 {
+        if nick.isEmpty {
             return .empty
         }
         return .ok
     }
     /// 验证密码
     class func verifyPassword(_ password:String) -> VerifyResult {
-        if password.count == 0 {
+        if password.isEmpty {
             return .empty
         }
         if !(password.count >= 6
@@ -254,5 +254,3 @@ enum Validate {
         return predicate.evaluate(with: currObject)
     }
 }
-
-
