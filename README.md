@@ -1,5 +1,7 @@
 # EWJudgmentString
-<h3>优雅的字符串判断拓展</h3>
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+
+优雅的字符串判断拓展
 
 # 实现功能:
 
